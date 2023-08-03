@@ -1,18 +1,14 @@
 #!/usr/bin/env python3
-
-
-'''Annotating the below function’s parameters and return
-values with the appropriate types
+''' Description: Add annotations to the below function’s parameters and
+                 return values with the appropriate types
+    Parameters: lst: Iterable[Sequence]
 '''
 
-
-from typing import Sequence, Iterable, List, Tuple
+from typing import Iterable, Sequence, List, Tuple
 
 
 def element_length(lst: Iterable[Sequence]) -> List[Tuple[Sequence, int]]:
-    '''Annotating the function parameters'''
+    '''Outputs list of tuples, one for each element, of which
+       consists of the element itself and its length.
+    '''
     return [(i, len(i)) for i in lst]
-
-
-if __name__ == '__main__':
-    print(element_length.__annotations__)

@@ -1,14 +1,11 @@
 #!/usr/bin/env python3
-
-'''A python module that returns the summation of two float numbers'''
+''' Description: type-annotated function add that takes a float a and a float b
+                 as arguments and returns their sum as a float
+    Parameters: a: float
+                b: float
+'''
 
 
 def add(a: float, b: float) -> float:
-    '''A function that returns the summation of two float numbers'''
+    ''' Return sum of a and b. '''
     return a + b
-
-
-if __name__ == '__main__':
-
-    print(add(1.11, 2.22) == 1.11 + 2.22)
-    print(add.__annotations__)
